@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "";
+}
+
+@model AllPayments
+
+<h1 class="display-4">Платежи</h1>
+<table class="table table-bordered">
+    @if (Model.Lines.Count() != 0)
+    {
+        <thead class="thead-light">
+            <tr class="table-info">
+                <th scope="col">Номер платежа</th>
+                <th scope="col">Дата</th>
+                <th scope="col">Размер платежа по телу</th>
+                <th scope="col">Платеж по процентам</th>
+                <th scope="col">Остаток долга</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var line in Model.Lines)
+            {
+                <tr class="table-light">
+                    <td>@line.NumberPayment</td>
+                    <td>@line.DateTime.Date.ToString("dd:MM:yyyy")</td>
+                    <td>@line.BodyCredit</td>
+                    <td>@line.InterestCoverage</td>
+                    <td>@line.CreditAmount</td>
+                </tr>
+            }
+        </tbody>
+
+        <tfoot>
+            <tr class="table-light">
+                <td colspan="4">Переплата по кредиту:</td>
+                <td>@(Model.Lines.ElementAt(0).Overpayment)</td>
+            </tr>
+        </tfoot>
+    }
+</table>
+

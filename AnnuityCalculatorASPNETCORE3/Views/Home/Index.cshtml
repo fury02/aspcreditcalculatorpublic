@@ -1,0 +1,48 @@
+﻿@model BankCreditData
+
+<script src="~/lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+
+<form class="form-group" method="post">
+    <h6></h6>
+    <label asp-for="CreditAmount" class="col-md-2 control-label">Сумма кредита:</label>
+    <span asp-validation-for="CreditAmount" class="text-danger"></span>
+    <input asp-for="CreditAmount" class="form-control" />
+    <h6></h6>
+    <label asp-for="CreditTerm" class="col-md-2 control-label">Период кредита:</label>
+    <span asp-validation-for="CreditTerm" class="text-danger"></span>
+    <h6></h6>
+    <div class="input-group">
+        <input asp-for="CreditTerm" class="form-control" />
+        <select asp-for="TypeTime" class="form-control">
+            <option value="Month">Месяцы</option>
+            @*<option value="Day">Дни</option>*@
+        </select>
+    </div>
+    <h6></h6>
+    <label asp-for="CreditRate" class="col-md-2 control-label">Процентная ставка:</label>
+    <span asp-validation-for="CreditRate" class="text-danger"></span>
+    <h6></h6>
+    <div class="input-group">
+        <input asp-for="CreditRate" class="form-control" />
+        <select asp-for="TypeTimeInterest" class="form-control">
+            <option value="Year">Годы</option>
+            @*<option value="Day">Дни</option>*@
+        </select>
+    </div>
+    <h6></h6>
+    <label asp-for="StepPayment" class="col-md-2 control-label">Шаг платежа в днях:</label>
+    <h6></h6>
+    <div class="input-group">
+        <select asp-for="StepPayment" class="form-control">
+            <option value="365">Year</option>
+            @*<option value="10">10 day</option>
+            <option value="15">15 day</option>*@
+        </select>
+    </div>
+    <h6></h6>
+    <div class="bottom">
+        <button type="submit" class="btn btn-success">Расчитать</button>
+    </div>
+</form>

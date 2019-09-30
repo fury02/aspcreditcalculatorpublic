@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj": {}
+  },
+  "projects": {
+    "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj",
+        "projectName": "AnnuityCalculatorASPNETCORE3",
+        "projectPath": "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj",
+        "packagesPath": "C:\\Users\\fury02\\.nuget\\packages\\",
+        "outputPath": "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fury02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+              },
+              "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "LightInject": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview9-014004\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj",
+        "projectName": "ClassLibraryCreditCalculate",
+        "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj",
+        "projectName": "ContainerDI",
+        "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    }
+  }
+}

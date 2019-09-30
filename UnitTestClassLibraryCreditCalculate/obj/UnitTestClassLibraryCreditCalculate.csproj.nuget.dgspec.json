@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj": {}
+  },
+  "projects": {
+    "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj",
+        "projectName": "ClassLibraryCreditCalculate",
+        "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj",
+        "projectName": "ContainerDI",
+        "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj",
+        "projectName": "UnitTestClassLibraryCreditCalculate",
+        "projectPath": "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj",
+        "packagesPath": "C:\\Users\\fury02\\.nuget\\packages\\",
+        "outputPath": "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fury02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+              },
+              "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "LightInject": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-preview9-014004\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
