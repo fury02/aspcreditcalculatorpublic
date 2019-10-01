@@ -6932,11 +6932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj",
+      "projectUniqueName": "T:\\aspcreditcalculatorpublic\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj",
       "projectName": "UnitTestClassLibraryCreditCalculate",
-      "projectPath": "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj",
+      "projectPath": "T:\\aspcreditcalculatorpublic\\UnitTestClassLibraryCreditCalculate\\UnitTestClassLibraryCreditCalculate.csproj",
       "packagesPath": "C:\\Users\\fury02\\.nuget\\packages\\",
-      "outputPath": "T:\\aspcreditcalculatorprivate\\UnitTestClassLibraryCreditCalculate\\obj\\",
+      "outputPath": "T:\\aspcreditcalculatorpublic\\UnitTestClassLibraryCreditCalculate\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6957,11 +6957,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
-              "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+            "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+              "projectPath": "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
             },
-            "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
-              "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj"
+            "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj": {
+              "projectPath": "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj"
             }
           }
         }

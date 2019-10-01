@@ -22,3 +22,14 @@ T:\aspcreditcalculatorprivate\ContainerDI\obj\Debug\ContainerDI.csprojAssemblyRe
 T:\aspcreditcalculatorprivate\ContainerDI\obj\Debug\ContainerDI.csproj.CopyComplete
 T:\aspcreditcalculatorprivate\ContainerDI\obj\Debug\ContainerDI.dll
 T:\aspcreditcalculatorprivate\ContainerDI\obj\Debug\ContainerDI.pdb
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\ContainerDI.dll
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\ContainerDI.pdb
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\ClassLibraryCreditCalculate.dll
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\LightInject.dll
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\ClassLibraryCreditCalculate.pdb
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\LightInject.pdb
+T:\aspcreditcalculatorpublic\ContainerDI\bin\Debug\LightInject.xml
+T:\aspcreditcalculatorpublic\ContainerDI\obj\Debug\ContainerDI.csprojAssemblyReference.cache
+T:\aspcreditcalculatorpublic\ContainerDI\obj\Debug\ContainerDI.csproj.CopyComplete
+T:\aspcreditcalculatorpublic\ContainerDI\obj\Debug\ContainerDI.dll
+T:\aspcreditcalculatorpublic\ContainerDI\obj\Debug\ContainerDI.pdb

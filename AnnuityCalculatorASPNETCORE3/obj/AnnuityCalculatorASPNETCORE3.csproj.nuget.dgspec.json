@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj": {}
+    "T:\\aspcreditcalculatorpublic\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj": {}
   },
   "projects": {
-    "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj": {
+    "T:\\aspcreditcalculatorpublic\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj",
+        "projectUniqueName": "T:\\aspcreditcalculatorpublic\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj",
         "projectName": "AnnuityCalculatorASPNETCORE3",
-        "projectPath": "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj",
+        "projectPath": "T:\\aspcreditcalculatorpublic\\AnnuityCalculatorASPNETCORE3\\AnnuityCalculatorASPNETCORE3.csproj",
         "packagesPath": "C:\\Users\\fury02\\.nuget\\packages\\",
-        "outputPath": "T:\\aspcreditcalculatorprivate\\AnnuityCalculatorASPNETCORE3\\obj\\",
+        "outputPath": "T:\\aspcreditcalculatorpublic\\AnnuityCalculatorASPNETCORE3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,11 +32,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
-                "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+              "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
               },
-              "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
-                "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj"
+              "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj"
               }
             }
           }
@@ -81,28 +81,28 @@
         }
       }
     },
-    "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+    "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj",
+        "projectUniqueName": "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj",
         "projectName": "ClassLibraryCreditCalculate",
-        "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+        "projectPath": "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
       },
       "frameworks": {
         "net461": {}
       }
     },
-    "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj": {
+    "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj",
+        "projectUniqueName": "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj",
         "projectName": "ContainerDI",
-        "projectPath": "T:\\aspcreditcalculatorprivate\\ContainerDI\\ContainerDI.csproj",
+        "projectPath": "T:\\aspcreditcalculatorpublic\\ContainerDI\\ContainerDI.csproj",
         "frameworks": {
           "net461": {
             "projectReferences": {
-              "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
-                "projectPath": "T:\\aspcreditcalculatorprivate\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
+              "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj": {
+                "projectPath": "T:\\aspcreditcalculatorpublic\\ClassLibraryCreditCalculate\\ClassLibraryCreditCalculate.csproj"
               }
             }
           }
