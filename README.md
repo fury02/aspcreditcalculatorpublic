@@ -2,8 +2,8 @@
 
 netcore 3.0
 
-#Стек:
-#c# asp.mvc + фронт на bootstrap + jQuery
+Стек:
+c# asp.mvc + фронт на bootstrap + jQuery
  
 Page 1 
 
