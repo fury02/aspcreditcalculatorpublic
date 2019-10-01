@@ -1,10 +1,10 @@
-# aspcreditcalculatorpublic
+# Annuity Web Calculator 
 
+netcore 3.0
 
-
-Стек:
-c# asp.mvc + фронт на bootstrap + jQuery
-
+#Стек:
+#c# asp.mvc + фронт на bootstrap + jQuery
+ 
 Page 1 
 
 содержит форму для входных данных:
