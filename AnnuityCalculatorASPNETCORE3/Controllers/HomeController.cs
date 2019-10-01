@@ -20,8 +20,7 @@ namespace AnnuityCalculatorASPNETCORE3.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-         
+        private readonly ILogger<HomeController> _logger;   
         private readonly ServiceContainer _serviceContainer = null;
         private ICreditInfo _creditInfo = null;
         private AllPayments _payinfo = null;
@@ -50,7 +49,6 @@ namespace AnnuityCalculatorASPNETCORE3.Controllers
 
             return View(result);
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

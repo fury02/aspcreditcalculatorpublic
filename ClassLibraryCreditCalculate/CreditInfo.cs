@@ -9,28 +9,56 @@ using ClassLibraryCreditCalculate.Models;
 namespace ClassLibraryCreditCalculate
 {
     public class CreditInfo : ICreditInfo
-    {
-        //CreditAmount = 10000; //Сумма
-        //CreditTerm = 36;      //Срок месяцы
-        //CreditRate = 13;      //Проценты
-        //StepPayment = 365;    //Годовая процентная ставка
-        //TypeTime = BankCreditData.TypeTimeEnum.Month; //Платежы по месяцу
-        //TypeTimeInterest = BankCreditData.TypeTimeInterestEnum.Year; //Ставка в год 
-
+    { 
         public List<Payments> Calculate(dynamic bankCreditData)
         {
             double creditAmount = bankCreditData.CreditAmount;
             double creditTerm = bankCreditData.CreditTerm;
             double creditRate = bankCreditData.CreditRate;
-            int stepPayment = bankCreditData.StepPayment;
+            double stepPayment = bankCreditData.StepPayment;
             dynamic typeTime = bankCreditData.TypeTime;
             dynamic typeTimeInterest = bankCreditData.TypeTimeInterest;
 
-            int month = 12;
-            double ratioAnnuity = RatioAnnuity(creditTerm, creditRate); //Коэффициент аннуитета
-            double mountsPayments = Math.Round(ratioAnnuity * creditAmount, 2); //Месячный платеж
-            double fullAmount = mountsPayments * creditTerm; //Полная сумма
-            double i = creditRate / 100 / month;
+            //Среднее число дней в месяце
+            if(stepPayment == 30)
+            {
+                stepPayment = ((double)365 / (double)12);
+            }
+
+            //Если указана дневная процентная ставка, для простоты ставим ее годовой
+            if(typeTimeInterest.ToString() == "Day")
+            {
+                creditRate = creditRate * 365;
+            }
+
+            //Если указаны месяцы в представлении "Период кредита:"
+            if (typeTime.ToString() == "Month")
+            {            
+                creditTerm = (((double)365/(double)12) * creditTerm);
+            }
+
+            double countPeriod = 0;
+            //Колличество периодов
+            if (creditTerm != 0 && stepPayment != 0)
+            {
+                countPeriod = Math.Round((creditTerm / stepPayment) - (creditTerm / stepPayment) % Math.Pow(10, 0));      
+            }
+
+            double periodsInYear = 0;
+            //Периуды для аннуитета, если дни то периодов больше чем 12
+            if (stepPayment >= 30)
+            {
+                periodsInYear = 12;
+            }
+            if(stepPayment == 10 || stepPayment == 15)
+            {
+                periodsInYear = Math.Round((365 / stepPayment) - (365 / stepPayment) % Math.Pow(10, 0)); 
+            }
+
+            double periodInterestRate = creditRate / 100 / periodsInYear;
+            double ratioAnnuity = RatioAnnuity(periodInterestRate, countPeriod, periodsInYear); //Коэффициент аннуитета
+            double periodPayments = Math.Round(ratioAnnuity * creditAmount, 2); //Месячный платеж или 10 или 15 дней
+            double fullAmount = periodPayments * countPeriod; //Полная сумма          
             double overpayment = Math.Round(fullAmount - creditAmount, 2);
 
             List<Payments> payes = new List<Payments>();
@@ -42,10 +70,22 @@ namespace ClassLibraryCreditCalculate
             {
                 count++;
 
-                var interestCoverage = Math.Round(creditAmount * i, 2); //Погашение процентов
-                creditAmount = Math.Round(creditAmount + interestCoverage - mountsPayments, 2); //Остаток
-                bodyCredit = Math.Round(mountsPayments - interestCoverage, 2);
-                dateTime = dateTime.AddMonths(1);
+                var interestCoverage = Math.Round(creditAmount * periodInterestRate, 2); //Погашение процентов
+                creditAmount = Math.Round(creditAmount + interestCoverage - periodPayments, 2); //Остаток
+                bodyCredit = Math.Round(periodPayments - interestCoverage, 2);
+                
+                if(stepPayment == 30)
+                {
+                    dateTime = dateTime.AddMonths(1);
+                }
+                if(stepPayment == 15)
+                {
+                    dateTime = dateTime.AddDays(15);
+                }
+                if(stepPayment == 10)
+                {
+                    dateTime = dateTime.AddDays(10);
+                }
 
                 //Действие, если в остатках погашения остались копейки, то есть сотые от целого.
                 if (Math.Round(creditAmount, 0) == 0)
@@ -58,19 +98,16 @@ namespace ClassLibraryCreditCalculate
 
             return payes;
         }
-
+       
         /// <summary>
         /// Коэффициент аннуитета
         /// </summary>
         /// <param name="CreditTerm"></param>
         /// <param name="CreditRate"></param>
         /// <returns></returns>
-        private double RatioAnnuity(double CreditTerm, double CreditRate)
-        {
-            int Month = 12; //годовая ставка для простого случая
-            var i = CreditRate / 100 / Month; //месячная процентная ставка по кредиту(= годовая ставка / 12 / 100)
-            var K = i * (System.Math.Pow((1 + i), CreditTerm)) / ((System.Math.Pow((1 + i), CreditTerm)) - 1); //Коэффициент аннуитета
-            return K;
-        }
+        private double RatioAnnuity(double periodInterestRate, double countPeriod, double periodsInYear) => periodInterestRate + (periodInterestRate /           
+            ((System.Math.Pow((1 + periodInterestRate), countPeriod)) - 1));
+             
+         
     }
 }

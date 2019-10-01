@@ -17,7 +17,7 @@
         <input asp-for="CreditTerm" class="form-control" />
         <select asp-for="TypeTime" class="form-control">
             <option value="Month">Месяцы</option>
-            @*<option value="Day">Дни</option>*@
+            <option value="Day">Дни</option>
         </select>
     </div>
     <h6></h6>
@@ -27,8 +27,8 @@
     <div class="input-group">
         <input asp-for="CreditRate" class="form-control" />
         <select asp-for="TypeTimeInterest" class="form-control">
-            <option value="Year">Годы</option>
-            @*<option value="Day">Дни</option>*@
+            <option value="Year">В год</option>
+            <option value="Day">В день</option>
         </select>
     </div>
     <h6></h6>
@@ -36,9 +36,9 @@
     <h6></h6>
     <div class="input-group">
         <select asp-for="StepPayment" class="form-control">
-            <option value="365">Year</option>
-            @*<option value="10">10 day</option>
-            <option value="15">15 day</option>*@
+            <option value="30">Месяц</option>
+            <option value="10">10 дней</option>
+            <option value="15">15 дней</option>
         </select>
     </div>
     <h6></h6>
