@@ -77,7 +77,7 @@ namespace ClassLibraryCreditCalculate
                     creditAmount = Math.Round(creditAmount + interestCoverage - periodPayments, 2); //Остаток
                     bodyCredit = Math.Round(periodPayments - interestCoverage, 2);
 
-                    if (stepPayment == 30)
+                    if (stepPayment >= 30)
                     {
                         dateTime = dateTime.AddMonths(1);
                     }
